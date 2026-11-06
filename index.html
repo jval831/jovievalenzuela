@@ -94,6 +94,14 @@
   .field p{position:absolute;left:0;right:0;bottom:0;padding:28px 32px;color:#fff;font-size:clamp(20px,2.6vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1.2;background:linear-gradient(transparent,rgba(14,35,64,.9));text-shadow:0 1px 2px rgba(0,0,0,.3)}
   @media (max-width:640px){.field img{aspect-ratio:4/3}.field p{padding:18px;font-size:19px}}
 
+
+  /* on camera */
+  .cam{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center;margin-top:40px}
+  .cam video{width:100%;max-width:360px;display:block;border-radius:10px;background:#000;box-shadow:0 20px 50px rgba(14,35,64,.18)}
+  .cam h3{font-size:clamp(22px,2.6vw,30px);font-weight:800;letter-spacing:-.025em;color:var(--navy);line-height:1.15}
+  .cam p{margin-top:14px;color:#2A3442;max-width:48ch}
+  @media (max-width:760px){.cam{grid-template-columns:1fr;gap:24px}.cam video{max-width:100%}}
+
   /* education */
   .edu{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
   .edu h3{font-size:20px;font-weight:700}
@@ -114,6 +122,7 @@
   <a class="mark" href="#">Jovie Valenzuela</a>
   <nav>
     <a href="#photos">Photos</a>
+    <a href="#camera">On camera</a>
     <a href="#work">Experience</a>
     <a href="#people">People</a>
     <a href="#education">Education</a>
@@ -147,7 +156,7 @@
         </div>
         <div class="lane">
           <h3>Revenue she can count</h3>
-          <p>Owns merchandise end to end at 7 Deadly Spins camps: pricing, inventory, point of sale, and $40,000 a year in sales. Advises her team's fundraising program at Bloomsburg.</p>
+          <p>Owns merchandise end to end at 7 Deadly Spins camps: pricing, inventory, point of sale, and $40,000 a year in sales. One of two Student-Athlete Advisory Committee reps for the whole university.</p>
         </div>
         <div class="lane">
           <h3>Comfortable with the talent</h3>
@@ -167,6 +176,18 @@
       <figure><img src="jsc-retreat.jpg" alt="Jen Schro camp staff and campers" loading="lazy"><figcaption>Jen Schro camp, staff and campers</figcaption></figure>
       <figure><img src="camper.jpg" alt="Jovie with a camper" loading="lazy"><figcaption>Every camper leaves with a story</figcaption></figure>
       <figure><img src="camp-indoor.jpg" alt="Jovie on site at an indoor camp" loading="lazy"><figcaption>On site, indoor camp day</figcaption></figure>
+    </div>
+  </section>
+
+
+  <section id="camera" class="wrap" style="padding-top:0">
+    <h2>On camera</h2>
+    <div class="cam">
+      <video controls playsinline preload="metadata" poster="on-camera-poster.jpg"><source src="on-camera.mp4" type="video/mp4"></video>
+      <div>
+        <h3>Clipboard in one hand, campers on the mic.</h3>
+        <p>Jovie hosts and produces interview content for 7 Deadly Spins social during camps: writes the questions, runs the segment, keeps 14-year-olds relaxed on camera, and hands the footage off ready to post. The same job a team's content and fan engagement staff does on game day.</p>
+      </div>
     </div>
   </section>
 
@@ -232,10 +253,11 @@
       <div class="row">
         <div class="when">2025 to present</div>
         <div>
-          <h3>Fundraising Advisor</h3>
-          <div class="org">Bloomsburg Softball, Student-Athlete Committee</div>
+          <h3>Student-Athlete Advisory Committee Representative</h3>
+          <div class="org">Commonwealth University, Bloomsburg Athletics</div>
           <ul>
-            <li>Advises the team's fundraising program; $5,000+ raised through team events and sponsor asks</li>
+            <li>One of two representatives for every student-athlete at the university; brings athlete feedback and recommendations to athletics administration on the policies that shape the student-athlete experience</li>
+            <li>Advises the softball program's fundraising; $5,000+ raised through team events and sponsor asks</li>
           </ul>
         </div>
       </div>
