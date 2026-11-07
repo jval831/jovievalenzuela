@@ -53,6 +53,7 @@
   .btn.primary{background:var(--navy);color:var(--white)}
   .btn.primary:hover{background:var(--navy-2)}
   .btn.ghost{color:var(--navy);background:transparent}
+  @media (max-width:640px){body{font-size:16px}.btn{width:100%;justify-content:center;text-align:center;padding:16px 20px}.cta{gap:10px}}
   .btn.ghost:hover{background:var(--mist)}
   .photo .frame{position:relative}
   .photo img{width:100%;height:auto;display:block;border-radius:6px;aspect-ratio:720/625;object-fit:cover}
@@ -118,14 +119,17 @@
 
 
   /* plan */
-  .plan{background:var(--navy);color:#fff;border-radius:10px;padding:36px 40px;margin-top:8px}
+  .plan{background:var(--navy);color:#fff;border-radius:12px;padding:40px 44px;margin-top:8px}
   .plan h3{font-size:clamp(22px,2.6vw,30px);font-weight:800;letter-spacing:-.025em}
-  .plan ol{margin:18px 0 26px 20px;color:#C9D3E2;max-width:60ch}
-  .plan li{margin-top:8px;padding-left:4px}
+  .plan ol{list-style:none;counter-reset:step;margin:22px 0 28px;padding:0;color:#C9D3E2;max-width:58ch}
+  .plan li{counter-increment:step;position:relative;padding-left:44px;margin-top:14px;line-height:1.5}
+  .plan li::before{content:counter(step);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
   .plan li b{color:#fff;font-weight:700}
-  .plan .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+  .plan li a.mail{display:block;margin-top:4px;color:var(--gold);text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+  .plan li a.mail:hover{text-decoration:underline}
+  .plan .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--navy);white-space:nowrap}
   .plan .btn.primary:hover{background:#ffc74a}
-  @media (max-width:640px){.plan{padding:26px 22px}}
+  @media (max-width:640px){.plan{padding:28px 22px;border-radius:10px}.plan ol{font-size:16px;margin:18px 0 24px}.plan li{padding-left:38px;margin-top:12px}.plan li::before{width:24px;height:24px;font-size:13px;top:2px}}
 
   /* education */
   .edu{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
@@ -178,7 +182,7 @@
     <div class="plan" style="margin-top:0">
       <h3>Why the Rangers</h3>
       <p style="margin-top:14px;color:#C9D3E2;max-width:60ch;font-size:17px;line-height:1.55">Dallas is home to people who have known me since I was 12. The Rangers&#x27; Globe Life Field operation, with concerts and events year round, is where I want to learn how a venue runs when the team is on the road.</p>
-      <a class="btn primary" style="margin-top:22px" href="mailto:joviearia@gmail.com?subject=Summer%202027%20internship%2C%20Texas%20Rangers">Email Jovie about the Texas Rangers</a>
+      <a class="btn primary" style="margin-top:22px" href="mailto:joviearia@gmail.com?subject=Summer%202027%20internship%2C%20Texas%20Rangers">Email Jovie &rarr;</a>
     </div>
   </section>
 
@@ -305,11 +309,11 @@
     <div class="plan">
       <h3>How this goes</h3>
       <ol>
-        <li><b>Email.</b> Two lines is plenty. joviearia@gmail.com</li>
+        <li><b>Email.</b> Two lines is plenty. <a class="mail" href="mailto:joviearia@gmail.com">joviearia@gmail.com</a></li>
         <li><b>A 15-minute call.</b> She'll have questions about your game day, not about parking validation.</li>
         <li><b>She's at your gate at 6 a.m.</b> Summer 2027, any city with a team.</li>
       </ol>
-      <a class="btn primary" href="mailto:joviearia@gmail.com?subject=Summer%202027%20internship">Email Jovie about summer 2027</a>
+      <a class="btn primary" href="mailto:joviearia@gmail.com?subject=Summer%202027%20internship">Email Jovie &rarr;</a>
     </div>
   </section>
 
